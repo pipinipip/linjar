@@ -144,7 +144,7 @@ disp('uppgift 3.3p')
 
 stat_eigenvector_p1_3=(eigenvector_p1_3/0.57735)/3;
 
-%fixa detta ^^^^^^ så det är som på uppgift 3.3q
+%fixa detta ^^^^^^ så det är som på
 
 stat_eigenvector_p1_3_disp=['Ifall vi skalar om egenvektorn som tillhör egenvärdet 1 så att alla element i vectorn summerar till 1 så får vi vektorn', mat2str(stat_eigenvector_p1_3, 5)];
 
