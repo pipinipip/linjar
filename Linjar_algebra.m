@@ -84,9 +84,9 @@ for i = 1:8
 state_v(:,i) = p1^i*v;
 end
 % Plotta resultatet, med initiala värdena först,
-%plot(transpose(0:8),transpose([v, state_v]));
+plot(transpose(0:8),transpose([v, state_v]));
 % Ange förklarande text i figuren
-%legend("Blåbär","Jordgubb","Vanilj");
+legend("Blåbär","Jordgubb","Vanilj");
 
 %% uppgift 3.2k
 
