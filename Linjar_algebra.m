@@ -176,12 +176,17 @@ stat_eigenvector_p2_1_disp=['Ifall vi skalar om egenvektorn som tillhör egenvä
 
 disp(stat_eigenvector_p2_1_disp)
 
-%% uppgift 3.4
+%% uppgift 3.4t
 
-disp('uppgift 3.4')
+disp('uppgift 3.4t')
 
+B=[1/3 1/4 0 1/4 0 0 0 0 0; 1/3 1/4 1/3 0 1/5 0 0 0 0; 0 1/4 1/3 0 0 1/4 0 0 0; 1/3 0 0 1/4 1/5 0 1/3 0 0; 0 1/4 0 1/4 1/5 1/4 0 1/4 0; 0 0 1/3 0 1/5 1/4 0 0 1/3; 0 0 0 1/4 0 0 1/3 1/4 0; 0 0 0 0 1/5 0 1/3 1/4 1/3; 0 0 0 0 0 1/4 0 1/4 1/3];
 
-%hejsan
+B2 = B^4;
+
+B2_disp=['B^4 är en matris med bara positiva värden och är ',mat2str(B2, 5)];
+
+disp(B2_disp)
 
 
 
