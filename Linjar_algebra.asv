@@ -180,11 +180,30 @@ disp(stat_eigenvector_p2_1_disp)
 
 disp('uppgift 3.4t')
 
-B=[1/3 1/4 0 1/4 0 0 0 0 0; 1/3 1/4 1/3 0 1/5 0 0 0 0; 0 1/4 1/3 0 0 1/4 0 0 0; 1/3 0 0 1/4 1/5 0 1/3 0 0; 0 1/4 0 1/4 1/5 1/4 0 1/4 0; 0 0 1/3 0 1/5 1/4 0 0 1/3; 0 0 0 1/4 0 0 1/3 1/4 0; 0 0 0 0 1/5 0 1/3 1/4 1/3; 0 0 0 0 0 1/4 0 1/4 1/3];
+B=[1/3 1/4 0 1/4 0 0 0 0 0;
+  1/3 1/4 1/3 0 1/5 0 0 0 0;
+  0 1/4 1/3 0 0 1/4 0 0 0; 1/3 0 0 1/4 1/5 0 1/3 0 0; 0 1/4 0 1/4 1/5 1/4 0 1/4 0; 0 0 1/3 0 1/5 1/4 0 0 1/3; 0 0 0 1/4 0 0 1/3 1/4 0; 0 0 0 0 1/5 0 1/3 1/4 1/3; 0 0 0 0 0 1/4 0 1/4 1/3];
 
 B2 = B^4;
 
-B2_disp=[]
+B2_disp=['B^4 är en matris med bara positiva värden och är ',mat2str(B2, 5)];
+
+disp(B2_disp)
+
+%% uppgift 3.4v
+
+disp('uppgift 3.4v')
+
+vb= [0; 1/3; 1/3; 0; 0; 1/3; 0; 0; 0];
+
+Beata3= B^3
+Beata3v= Beata3*vb
+Beata3_disp=['sannolikheterna att Beata befinner sig på de olika platserna efter 3 förflyttningar är', mat2str(Beata3, 5) ];
+
+%disp(Beata3_disp)
+
+
+
 
 
 
