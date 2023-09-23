@@ -84,7 +84,7 @@ for i = 1:8
 state_v(:,i) = p1^i*v;
 end
 % Plotta resultatet, med initiala värdena först,
-plot(transpose(0:8),transpose([v, state_v]));
+%plot(transpose(0:8),transpose([v, state_v]));
 % Ange förklarande text i figuren
 legend("Blåbär","Jordgubb","Vanilj");
 
@@ -232,3 +232,7 @@ disp(Eigenvalues_B)
 eigenvector_B_2 = [e4(1,2) ; e4(2,2); e4(3,2);e4(4,2) ; e4(5,2); e4(6,2); e4(7,2) ; e4(8,2); e4(9,2)];
 
 eigenvector_B_2_stat=eigenvector_B_2*(1/(e4(1,2) + e4(2,2)+ e4(3,2)+e4(4,2) + e4(5,2)+ e4(6,2)+ e4(7,2) + e4(8,2)+ e4(9,2)));
+
+stat_eigenvector_B_2_disp=['Ifall vi skalar om egenvektorn som tillhör egenvärdet 1 så att alla element i vectorn summerar till 1 så får vi vektorn', mat2str(eigenvector_B_2_stat, 5)];
+
+disp(stat_eigenvector_B_2_disp)
