@@ -209,7 +209,30 @@ Beata3_disp=['sannolikheterna att Beata befinner sig på de olika platserna efte
 disp(Beata3_disp)
 
 
+%% uppgift 3.4w
 
+disp('uppgift 3.4w')
 
+[e4,a4] = eig(B);
 
+eigenvalue_B_1=a4(1,1);
+eigenvalue_B_2=a4(2,2);
+eigenvalue_B_3=a4(3,3);
+eigenvalue_B_4=a4(4,4);
+eigenvalue_B_5=a4(5,5);
+eigenvalue_B_6=a4(6,6);
+eigenvalue_B_7=a4(7,7);
+eigenvalue_B_8=a4(8,8);
+eigenvalue_B_9=a4(9,9);
 
+Eigenvalues_B=['Eigenvalues för B är ',num2str(eigenvalue_B_1), ' , ',num2str(eigenvalue_B_2),' , ', num2str(eigenvalue_B_3),num2str(eigenvalue_B_4), ' , ',num2str(eigenvalue_B_5),' , ', num2str(eigenvalue_B_6),num2str(eigenvalue_B_7), ' , ',num2str(eigenvalue_B_8),' och ', num2str(eigenvalue_B_9)];
+
+disp(Eigenvalues_B)
+
+eigenvector_B_2 = [e4(1,2) ; e4(2,2); e4(3,2);e4(4,2) ; e4(5,2); e4(6,2); e4(7,2) ; e4(8,2); e4(9,2)];
+
+eigenvector_B_2_stat=eigenvector_B_2*(1/(e4(1,2) + e4(2,2)+ e4(3,2)+e4(4,2) + e4(5,2)+ e4(6,2)+ e4(7,2) + e4(8,2)+ e4(9,2)));
+
+stat_eigenvector_B_2_disp=['Ifall vi skalar om egenvektorn som tillhör egenvärdet 1 så att alla element i vectorn summerar till 1 så får vi vektorn', mat2str(eigenvector_B_2_stat, 5)];
+
+disp(stat_eigenvector_B_2_disp)
